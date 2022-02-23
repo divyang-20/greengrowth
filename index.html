@@ -18,11 +18,14 @@
 
     <nav>
         <div class="max-width">
-            <div class="logo">
-                <div class="icon">
-                    <img src="img/navlogo.png" alt="logo">
+            <div class="nav-content">
+                <div class="logo">
+                    <div class="icon">
+                        <img src="img/navlogo.png" alt="logo">
+                    </div>
+                    <a href="#" class="text">GREEN GROWTH</a>
                 </div>
-                <a href="#" class="text">GREEN GROWTH</a>
+                <div class="tanslator" id="google_element"></div>
             </div>
         </div>
     </nav>
@@ -487,6 +490,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
 <script>
     $(document).ready(function () {
         $("#myTable").DataTable();
@@ -498,6 +502,9 @@
         video: true,
         center: true
     });
+    function loadGoogleTranslate(){
+        new google.translate.TranslateElement("google_element");
+    }
 </script>
 
 </html>

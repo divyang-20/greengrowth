@@ -35,21 +35,26 @@ nav{
 nav .max-width{
     height: 100%;
 }
-nav .logo{
+nav .nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-content .logo{
     align-items: center;
     display: flex;
     height: 100%;
 }
-nav .logo .icon{
+.nav-content .logo .icon{
     height: 50px;
     width: 50px;
     margin-right: 12px;
 }
-nav .logo img{
+.nav-content .logo img{
     height: 95%;
     width: 120%;
 }
-nav .logo .text{
+.nav-content .logo .text{
     font-size: 25px;
     font-weight: 600;
 }
